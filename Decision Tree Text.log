@@ -1,0 +1,904 @@
+|--- debt_to_income_ratio_>60% <= 0.50
+|   |--- combined_loan_to_value_ratio <= 100.50
+|   |   |--- debt_to_income_ratio_50%-60% <= 0.50
+|   |   |   |--- combined_loan_to_value_ratio <= 80.50
+|   |   |   |   |--- loan_amount <= 980000.00
+|   |   |   |   |   |--- DI_indicator <= 0.50
+|   |   |   |   |   |   |--- debt_to_income_ratio_44 <= 0.50
+|   |   |   |   |   |   |   |--- loan_amount <= 40000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 26.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  26.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  40000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 650000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  650000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- debt_to_income_ratio_44 >  0.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 67.50
+|   |   |   |   |   |   |   |   |--- income <= 500.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  500.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  67.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 160000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  160000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- DI_indicator >  0.50
+|   |   |   |   |   |   |--- property_value <= 160000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 20.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 20000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  20000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  20.00
+|   |   |   |   |   |   |   |   |--- property_value <= 50000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  50000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- property_value >  160000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 60.50
+|   |   |   |   |   |   |   |   |--- property_value <= 3950000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  3950000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  60.50
+|   |   |   |   |   |   |   |   |--- property_value <= 3080000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  3080000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- loan_amount >  980000.00
+|   |   |   |   |   |--- debt_to_income_ratio_46 <= 0.50
+|   |   |   |   |   |   |--- debt_to_income_ratio_47 <= 0.50
+|   |   |   |   |   |   |   |--- debt_to_income_ratio_45 <= 0.50
+|   |   |   |   |   |   |   |   |--- income <= 595.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  595.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- debt_to_income_ratio_45 >  0.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 46.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  46.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- debt_to_income_ratio_47 >  0.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 66.00
+|   |   |   |   |   |   |   |   |--- income <= 540.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  540.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  66.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 1245000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  1245000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- debt_to_income_ratio_46 >  0.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 65.50
+|   |   |   |   |   |   |   |--- loan_amount <= 1450000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 61.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  61.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  1450000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 4155000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  4155000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  65.50
+|   |   |   |   |   |   |   |--- loan_amount <= 1840000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 1660000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  1660000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  1840000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- combined_loan_to_value_ratio >  80.50
+|   |   |   |   |--- combined_loan_to_value_ratio <= 89.50
+|   |   |   |   |   |--- combined_loan_to_value_ratio <= 84.50
+|   |   |   |   |   |   |--- income <= 291.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 81.50
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_38 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_38 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  81.50
+|   |   |   |   |   |   |   |   |--- property_value <= 990000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  990000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- income >  291.50
+|   |   |   |   |   |   |   |--- loan_amount <= 600000.00
+|   |   |   |   |   |   |   |   |--- income <= 308.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  308.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  600000.00
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- combined_loan_to_value_ratio >  84.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 85.50
+|   |   |   |   |   |   |   |--- income <= 97.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 240000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  240000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- income >  97.50
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_47 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_47 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  85.50
+|   |   |   |   |   |   |   |--- loan_amount <= 230000.00
+|   |   |   |   |   |   |   |   |--- income <= 79.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  79.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  230000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 86.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  86.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- combined_loan_to_value_ratio >  89.50
+|   |   |   |   |   |--- loan_amount <= 160000.00
+|   |   |   |   |   |   |--- property_value <= 60000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 90.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  90.50
+|   |   |   |   |   |   |   |   |--- income <= 39.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  39.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- property_value >  60000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 97.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 94.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  94.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  97.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 99.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  99.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- loan_amount >  160000.00
+|   |   |   |   |   |   |--- loan_amount <= 760000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 97.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 94.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  94.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  97.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 99.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  99.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- loan_amount >  760000.00
+|   |   |   |   |   |   |   |--- income <= 590.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 90.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  90.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- income >  590.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 945000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  945000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |--- debt_to_income_ratio_50%-60% >  0.50
+|   |   |   |--- combined_loan_to_value_ratio <= 96.50
+|   |   |   |   |--- combined_loan_to_value_ratio <= 75.50
+|   |   |   |   |   |--- loan_amount <= 750000.00
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 70.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 69.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 60.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  60.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  69.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 660000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  660000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  70.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 74.50
+|   |   |   |   |   |   |   |   |--- property_value <= 280000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  280000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  74.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 100000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  100000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- loan_amount >  750000.00
+|   |   |   |   |   |   |--- loan_amount <= 1230000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 37.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  37.50
+|   |   |   |   |   |   |   |   |--- property_value <= 2085000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  2085000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- loan_amount >  1230000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 58.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 54.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  54.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  58.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- combined_loan_to_value_ratio >  75.50
+|   |   |   |   |   |--- income <= 360.50
+|   |   |   |   |   |   |--- income <= 28.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 85.50
+|   |   |   |   |   |   |   |   |--- income <= 25.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  25.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  85.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 92.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  92.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  28.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 89.50
+|   |   |   |   |   |   |   |   |--- income <= 193.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  193.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  89.50
+|   |   |   |   |   |   |   |   |--- income <= 77.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  77.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- income >  360.50
+|   |   |   |   |   |   |--- property_value <= 750000.00
+|   |   |   |   |   |   |   |--- loan_amount <= 515000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  515000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- property_value >  750000.00
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- combined_loan_to_value_ratio >  96.50
+|   |   |   |   |--- income <= 71.50
+|   |   |   |   |   |--- loan_amount <= 350000.00
+|   |   |   |   |   |   |--- income <= 28.50
+|   |   |   |   |   |   |   |--- loan_amount <= 140000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  140000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 190000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  190000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  28.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 97.50
+|   |   |   |   |   |   |   |   |--- income <= 50.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  50.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  97.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 99.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  99.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- loan_amount >  350000.00
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 99.50
+|   |   |   |   |   |   |   |--- property_value <= 470000.00
+|   |   |   |   |   |   |   |   |--- income <= 59.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  59.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- property_value >  470000.00
+|   |   |   |   |   |   |   |   |--- income <= 67.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  67.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  99.50
+|   |   |   |   |   |   |   |--- income <= 42.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  42.50
+|   |   |   |   |   |   |   |   |--- income <= 55.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  55.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- income >  71.50
+|   |   |   |   |   |--- income <= 372.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 99.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 97.50
+|   |   |   |   |   |   |   |   |--- property_value <= 460000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  460000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  97.50
+|   |   |   |   |   |   |   |   |--- property_value <= 400000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  400000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  99.50
+|   |   |   |   |   |   |   |--- loan_amount <= 300000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 355000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  355000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  300000.00
+|   |   |   |   |   |   |   |   |--- income <= 84.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  84.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- income >  372.50
+|   |   |   |   |   |   |--- class: 0
+|   |--- combined_loan_to_value_ratio >  100.50
+|   |   |--- combined_loan_to_value_ratio <= 102.50
+|   |   |   |--- loan_amount <= 320000.00
+|   |   |   |   |--- income <= 87.50
+|   |   |   |   |   |--- DI_indicator <= 0.50
+|   |   |   |   |   |   |--- property_value <= 195000.00
+|   |   |   |   |   |   |   |--- income <= 45.00
+|   |   |   |   |   |   |   |   |--- income <= 39.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  39.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  45.00
+|   |   |   |   |   |   |   |   |--- income <= 70.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  70.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- property_value >  195000.00
+|   |   |   |   |   |   |   |--- property_value <= 320000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 270000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  270000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  320000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- DI_indicator >  0.50
+|   |   |   |   |   |   |--- income <= 46.50
+|   |   |   |   |   |   |   |--- loan_amount <= 160000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 80000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  80000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  160000.00
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_39 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_39 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- income >  46.50
+|   |   |   |   |   |   |   |--- loan_amount <= 210000.00
+|   |   |   |   |   |   |   |   |--- income <= 69.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  69.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  210000.00
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- income >  87.50
+|   |   |   |   |   |--- income <= 101.50
+|   |   |   |   |   |   |--- income <= 90.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  90.50
+|   |   |   |   |   |   |   |--- loan_amount <= 235000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 130000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  130000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  235000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 250000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  250000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- income >  101.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- loan_amount >  320000.00
+|   |   |   |   |--- income <= 112.50
+|   |   |   |   |   |--- debt_to_income_ratio_38 <= 0.50
+|   |   |   |   |   |   |--- DI_indicator <= 0.50
+|   |   |   |   |   |   |   |--- income <= 111.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 585000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  585000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  111.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- DI_indicator >  0.50
+|   |   |   |   |   |   |   |--- income <= 96.50
+|   |   |   |   |   |   |   |   |--- income <= 92.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  92.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- income >  96.50
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- debt_to_income_ratio_38 >  0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- income >  112.50
+|   |   |   |   |   |--- debt_to_income_ratio_30%-<36% <= 0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- debt_to_income_ratio_30%-<36% >  0.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 101.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  101.50
+|   |   |   |   |   |   |   |--- loan_amount <= 670000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  670000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |--- combined_loan_to_value_ratio >  102.50
+|   |   |   |--- loan_amount <= 50000.00
+|   |   |   |   |--- combined_loan_to_value_ratio <= 105.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- combined_loan_to_value_ratio >  105.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- loan_amount >  50000.00
+|   |   |   |   |--- combined_loan_to_value_ratio <= 105.50
+|   |   |   |   |   |--- income <= 50.50
+|   |   |   |   |   |   |--- DI_indicator <= 0.50
+|   |   |   |   |   |   |   |--- loan_amount <= 170000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 155000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  155000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  170000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- DI_indicator >  0.50
+|   |   |   |   |   |   |   |--- debt_to_income_ratio_39 <= 0.50
+|   |   |   |   |   |   |   |   |--- income <= 47.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  47.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- debt_to_income_ratio_39 >  0.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- income >  50.50
+|   |   |   |   |   |   |--- loan_amount <= 290000.00
+|   |   |   |   |   |   |   |--- property_value <= 285000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 95000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  95000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  285000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- loan_amount >  290000.00
+|   |   |   |   |   |   |   |--- property_value <= 950000.00
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_45 <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_45 >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  950000.00
+|   |   |   |   |   |   |   |   |--- income <= 176.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  176.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- combined_loan_to_value_ratio >  105.50
+|   |   |   |   |   |--- combined_loan_to_value_ratio <= 200.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 107.50
+|   |   |   |   |   |   |   |--- income <= 35.50
+|   |   |   |   |   |   |   |   |--- DI_indicator <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- DI_indicator >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  35.50
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- debt_to_income_ratio_30%-<36% >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  107.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- combined_loan_to_value_ratio >  200.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 201.50
+|   |   |   |   |   |   |   |--- income <= 83.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  83.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  201.50
+|   |   |   |   |   |   |   |--- class: 0
+|--- debt_to_income_ratio_>60% >  0.50
+|   |--- combined_loan_to_value_ratio <= 98.50
+|   |   |--- income <= 58.50
+|   |   |   |--- income <= 40.50
+|   |   |   |   |--- property_value <= 330000.00
+|   |   |   |   |   |--- income <= 34.50
+|   |   |   |   |   |   |--- income <= 31.50
+|   |   |   |   |   |   |   |--- income <= 30.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 200000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  200000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  30.50
+|   |   |   |   |   |   |   |   |--- property_value <= 170000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  170000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  31.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- income >  34.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 74.50
+|   |   |   |   |   |   |   |--- income <= 37.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 71.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  71.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- income >  37.50
+|   |   |   |   |   |   |   |   |--- property_value <= 215000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  215000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  74.50
+|   |   |   |   |   |   |   |--- property_value <= 105000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 75000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  75000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- property_value >  105000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 90.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  90.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- property_value >  330000.00
+|   |   |   |   |   |--- income <= 37.50
+|   |   |   |   |   |   |--- property_value <= 420000.00
+|   |   |   |   |   |   |   |--- property_value <= 410000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 46.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  46.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  410000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 76.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  76.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- property_value >  420000.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 79.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  79.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 80.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  80.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- income >  37.50
+|   |   |   |   |   |   |--- property_value <= 480000.00
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- property_value >  480000.00
+|   |   |   |   |   |   |   |--- property_value <= 495000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 315000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  315000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- property_value >  495000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 87.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  87.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- income >  40.50
+|   |   |   |   |--- combined_loan_to_value_ratio <= 90.50
+|   |   |   |   |   |--- combined_loan_to_value_ratio <= 80.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 72.50
+|   |   |   |   |   |   |   |--- property_value <= 400000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 120000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  120000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  400000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 47.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  47.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  72.50
+|   |   |   |   |   |   |   |--- loan_amount <= 280000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  280000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 710000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  710000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- combined_loan_to_value_ratio >  80.50
+|   |   |   |   |   |   |--- loan_amount <= 490000.00
+|   |   |   |   |   |   |   |--- property_value <= 590000.00
+|   |   |   |   |   |   |   |   |--- income <= 53.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  53.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  590000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- loan_amount >  490000.00
+|   |   |   |   |   |   |   |--- property_value <= 680000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  680000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 610000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  610000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- combined_loan_to_value_ratio >  90.50
+|   |   |   |   |   |--- income <= 43.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- income >  43.50
+|   |   |   |   |   |   |--- income <= 47.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 95.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 390000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  390000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  95.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 285000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  285000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  47.50
+|   |   |   |   |   |   |   |--- property_value <= 250000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 195000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  195000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  250000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 515000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  515000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |--- income >  58.50
+|   |   |   |--- combined_loan_to_value_ratio <= 80.50
+|   |   |   |   |--- combined_loan_to_value_ratio <= 75.50
+|   |   |   |   |   |--- combined_loan_to_value_ratio <= 74.50
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 61.50
+|   |   |   |   |   |   |   |--- property_value <= 130000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- property_value >  130000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 840000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  840000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  61.50
+|   |   |   |   |   |   |   |--- income <= 147.50
+|   |   |   |   |   |   |   |   |--- income <= 142.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  142.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- income >  147.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 73.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  73.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- combined_loan_to_value_ratio >  74.50
+|   |   |   |   |   |   |--- property_value <= 240000.00
+|   |   |   |   |   |   |   |--- property_value <= 230000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  230000.00
+|   |   |   |   |   |   |   |   |--- income <= 114.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  114.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- property_value >  240000.00
+|   |   |   |   |   |   |   |--- income <= 65.50
+|   |   |   |   |   |   |   |   |--- income <= 62.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  62.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  65.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 380000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  380000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- combined_loan_to_value_ratio >  75.50
+|   |   |   |   |   |--- combined_loan_to_value_ratio <= 79.50
+|   |   |   |   |   |   |--- loan_amount <= 290000.00
+|   |   |   |   |   |   |   |--- income <= 70.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 77.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  77.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- income >  70.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- loan_amount >  290000.00
+|   |   |   |   |   |   |   |--- loan_amount <= 400000.00
+|   |   |   |   |   |   |   |   |--- income <= 66.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  66.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  400000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 730000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  730000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- combined_loan_to_value_ratio >  79.50
+|   |   |   |   |   |   |--- income <= 166.50
+|   |   |   |   |   |   |   |--- income <= 149.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 540000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  540000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  149.50
+|   |   |   |   |   |   |   |   |--- property_value <= 1530000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  1530000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- income >  166.50
+|   |   |   |   |   |   |   |--- income <= 261.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  261.50
+|   |   |   |   |   |   |   |   |--- income <= 266.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  266.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- combined_loan_to_value_ratio >  80.50
+|   |   |   |   |--- combined_loan_to_value_ratio <= 94.50
+|   |   |   |   |   |--- loan_amount <= 220000.00
+|   |   |   |   |   |   |--- income <= 78.00
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 85.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  85.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  78.00
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- loan_amount >  220000.00
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 86.50
+|   |   |   |   |   |   |   |--- property_value <= 690000.00
+|   |   |   |   |   |   |   |   |--- income <= 237.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  237.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- property_value >  690000.00
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 82.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  82.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  86.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 88.50
+|   |   |   |   |   |   |   |   |--- loan_amount <= 615000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  615000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  88.50
+|   |   |   |   |   |   |   |   |--- income <= 216.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  216.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- combined_loan_to_value_ratio >  94.50
+|   |   |   |   |   |--- loan_amount <= 860000.00
+|   |   |   |   |   |   |--- income <= 83.50
+|   |   |   |   |   |   |   |--- income <= 67.50
+|   |   |   |   |   |   |   |   |--- property_value <= 350000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  350000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  67.50
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 97.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  97.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  83.50
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 97.50
+|   |   |   |   |   |   |   |   |--- income <= 84.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  84.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- combined_loan_to_value_ratio >  97.50
+|   |   |   |   |   |   |   |   |--- income <= 139.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  139.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- loan_amount >  860000.00
+|   |   |   |   |   |   |--- income <= 102.00
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- income >  102.00
+|   |   |   |   |   |   |   |--- income <= 240.00
+|   |   |   |   |   |   |   |   |--- property_value <= 1495000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  1495000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  240.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |--- combined_loan_to_value_ratio >  98.50
+|   |   |--- combined_loan_to_value_ratio <= 100.50
+|   |   |   |--- income <= 66.50
+|   |   |   |   |--- income <= 39.50
+|   |   |   |   |   |--- loan_amount <= 310000.00
+|   |   |   |   |   |   |--- loan_amount <= 300000.00
+|   |   |   |   |   |   |   |--- loan_amount <= 250000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 230000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- loan_amount >  230000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  250000.00
+|   |   |   |   |   |   |   |   |--- income <= 36.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  36.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- loan_amount >  300000.00
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- loan_amount >  310000.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- income >  39.50
+|   |   |   |   |   |--- loan_amount <= 595000.00
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio <= 99.50
+|   |   |   |   |   |   |   |--- income <= 51.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- income >  51.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 375000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  375000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- combined_loan_to_value_ratio >  99.50
+|   |   |   |   |   |   |   |--- loan_amount <= 370000.00
+|   |   |   |   |   |   |   |   |--- income <= 47.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  47.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  370000.00
+|   |   |   |   |   |   |   |   |--- income <= 49.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  49.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- loan_amount >  595000.00
+|   |   |   |   |   |   |--- loan_amount <= 655000.00
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- loan_amount >  655000.00
+|   |   |   |   |   |   |   |--- loan_amount <= 710000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  710000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- income >  66.50
+|   |   |   |   |--- combined_loan_to_value_ratio <= 99.50
+|   |   |   |   |   |--- income <= 89.00
+|   |   |   |   |   |   |--- property_value <= 255000.00
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- property_value >  255000.00
+|   |   |   |   |   |   |   |--- property_value <= 520000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 480000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  480000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- property_value >  520000.00
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- income >  89.00
+|   |   |   |   |   |   |--- income <= 236.50
+|   |   |   |   |   |   |   |--- loan_amount <= 690000.00
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- loan_amount >  690000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 725000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- property_value >  725000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- income >  236.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- combined_loan_to_value_ratio >  99.50
+|   |   |   |   |   |--- loan_amount <= 280000.00
+|   |   |   |   |   |   |--- income <= 91.50
+|   |   |   |   |   |   |   |--- loan_amount <= 260000.00
+|   |   |   |   |   |   |   |   |--- income <= 83.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- income >  83.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  260000.00
+|   |   |   |   |   |   |   |   |--- income <= 76.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  76.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- income >  91.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- loan_amount >  280000.00
+|   |   |   |   |   |   |--- loan_amount <= 800000.00
+|   |   |   |   |   |   |   |--- property_value <= 480000.00
+|   |   |   |   |   |   |   |   |--- loan_amount <= 490000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- loan_amount >  490000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- property_value >  480000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 520000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  520000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- loan_amount >  800000.00
+|   |   |   |   |   |   |   |--- loan_amount <= 810000.00
+|   |   |   |   |   |   |   |   |--- property_value <= 780000.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- property_value >  780000.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- loan_amount >  810000.00
+|   |   |   |   |   |   |   |   |--- income <= 80.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- income >  80.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |--- combined_loan_to_value_ratio >  100.50
+|   |   |   |--- class: 0
